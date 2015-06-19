@@ -102,7 +102,8 @@ object DeleteRowKeysBulkDelete {
     job.waitForCompletion(true)
 
     /* changing the permissions of the hfiles created as bulk loader is run as hbase user, not the user who 
-    /* runs this job 
+     * runs this job 
+     */
 
     changePermission(hFileDir, "777", true, hbaseConf) match {
       case 0 => {
