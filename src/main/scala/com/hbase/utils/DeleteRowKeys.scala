@@ -14,7 +14,7 @@ import org.slf4j.{LoggerFactory, Logger}
 
 import scala.collection.mutable.ListBuffer
 
-object DeleteRowKeys extends OfsApp {
+object DeleteRowKeys extends HbaseUtilApp {
 
   def logger: Logger = LoggerFactory.getLogger(this.getClass)
 

@@ -8,7 +8,7 @@ import org.apache.hadoop.hbase.HBaseConfiguration
 
 import org.apache.hadoop.hbase.client.{HTableInterface, HConnectionManager}
 
-trait OfsApp {
+trait HbaseUtilApp {
   private var argsFromMain: Option[Array[String]] = None
 
   val configuration = new Configuration
